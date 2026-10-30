@@ -1,0 +1,64 @@
+{
+  "small_cnn": {
+    "model": "Small CNN (scratch)",
+    "val_acc": 0.7872727513313293,
+    "test_acc": 0.7441016435623169,
+    "test_loss": 0.7352173924446106,
+    "params_total": 244069,
+    "params_trainable_at_end": 243365,
+    "file_mb": 3.02,
+    "train_time_s": 71.81737875938416,
+    "epochs_run": 25,
+    "ms_per_image": 2.375146746635437
+  },
+  "mobilenetv2_fe": {
+    "model": "MobileNetV2 feature extraction",
+    "val_acc": 0.8781818151473999,
+    "test_acc": 0.8874773383140564,
+    "test_loss": 0.32550302147865295,
+    "params_total": 2264389,
+    "params_trainable_at_end": 6405,
+    "file_mb": 9.71,
+    "train_time_s": 51.54456901550293,
+    "epochs_run": 10,
+    "ms_per_image": 3.495790809392929
+  },
+  "detection": [
+    {
+      "model": "FasterRCNN-ResNet50-FPN",
+      "params_M": 41.76,
+      "avg_ms_per_image": 148.6,
+      "fps": 6.7,
+      "peak_gpu_mem_MB": 587.0,
+      "total_detections": 58
+    },
+    {
+      "model": "FasterRCNN-MobileNetV3-FPN",
+      "params_M": 19.39,
+      "avg_ms_per_image": 41.6,
+      "fps": 24.0,
+      "peak_gpu_mem_MB": 308.0,
+      "total_detections": 44
+    },
+    {
+      "model": "SSDlite320-MobileNetV3",
+      "params_M": 3.44,
+      "avg_ms_per_image": 33.9,
+      "fps": 29.5,
+      "peak_gpu_mem_MB": 52.0,
+      "total_detections": 16
+    }
+  ],
+  "mobilenetv2_ft": {
+    "model": "MobileNetV2 fine-tuning",
+    "val_acc": 0.9163636565208435,
+    "test_acc": 0.9328493475914001,
+    "test_loss": 0.22991293668746948,
+    "params_total": 2264389,
+    "params_trainable_at_end": 1517125,
+    "file_mb": 21.8,
+    "train_time_s": 76.32161164283752,
+    "epochs_run": 14,
+    "ms_per_image": 3.8264550268650055
+  }
+}

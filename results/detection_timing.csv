@@ -1,0 +1,4 @@
+model,params_M,avg_ms_per_image,fps,peak_gpu_mem_MB,total_detections
+FasterRCNN-ResNet50-FPN,41.76,148.6,6.7,587.0,58
+FasterRCNN-MobileNetV3-FPN,19.39,41.6,24.0,308.0,44
+SSDlite320-MobileNetV3,3.44,33.9,29.5,52.0,16
